@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Firebase</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h2>Firebase</h2>
-  <label>Message:</label>
-  <input type="text" id="message">
-  <button id="add">Add</button>
+
+  <div class="chooseName">
+    <label>Your name:</label>
+    <input type="text" id="name" minlength=1>
+    <button id="start">Start</button>
+  </div>
+
+  <div class='newMessage'>
+    <label>Message:</label>
+    <input type="text" id="message">
+    <button id="add">Add</button>
+  </div>
+
   <ul id="output"></ul>
 
   <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
