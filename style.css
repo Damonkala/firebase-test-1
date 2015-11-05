@@ -1,0 +1,17 @@
+h1{
+  text-align: center;
+  margin: auto;
+}
+h2{
+  text-align: center;
+  margin: auto;
+}
+.newMessage, #output {
+  display: none;
+}
+#users{
+  border: 1px solid black;
+}
+#output{
+  border: 1px solid black;
+}
