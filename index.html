@@ -9,9 +9,15 @@
 <body>
   <h1>Chatter Box</h1>
 
-  <div class="col-xs-8" style="overflow-y: scroll; height: 400px">
+  <div class="col-xs-8" style="overflow-y: scroll; height: 1000px">
     <h2>Chat</h2>
     <ul id="output"></ul>
+  <div class='newMessage'>
+    <label>Message:</label>
+    <input type="text" id="message" size="50">
+    <button id="add">Add</button>
+    <button id="sans">sans</button>
+  </div>
   </div>
   <div class="col-xs-4">
     <h2>Users</h2>
@@ -24,11 +30,6 @@
     <button id="start">Start</button>
   </div>
 
-  <div class='newMessage'>
-    <label>Message:</label>
-    <input type="text" id="message">
-    <button id="add">Add</button>
-  </div>
   <button id="logout">Log out</button>
 
 

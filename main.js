@@ -13,6 +13,10 @@ function init() {
   $('#add').click(addMessage);
   $("#start").click(start);
   $("#logout").click(logout);
+  $('#sans').click(sans);
+  $("input").keypress(function() {
+    if (event.which == 13) addMessage();
+});
 
   $(window).on('beforeunload', logout)
 
@@ -74,4 +78,15 @@ function addMessage(){
     time: Date().replace("GMT-0800 (PST)", " "),
     message: message
   });
+}
+
+function sans(){
+
+    $('.newMessage').css("font-family", "'Comic Sans MS', cursive, sans-serif");
+    $('.h1').css("font-family", "'Comic Sans MS', cursive, sans-serif");
+    $('#output').css("font-family", "'Comic Sans MS', cursive, sans-serif");
+    $('#users').css("font-family", "'Comic Sans MS', cursive, sans-serif");
+    $('.h2').css("font-family", "'Comic Sans MS', cursive, sans-serif");
+    sans = true;
+
 }
